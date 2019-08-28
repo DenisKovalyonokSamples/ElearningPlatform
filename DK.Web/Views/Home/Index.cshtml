@@ -1,0 +1,129 @@
+﻿@model DK.Web.Models.DataViewModel
+@{
+    ViewBag.Title = "WEB eLearning";
+}
+
+<div class="jumbotron">
+    <h1>WEB SITE</h1>
+    <div class="content-title"><h3>TECHNOLOGY STACK</h3></div>
+    <p class="lead content-block"><strong>ASP.NET MVC</strong>  - is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+    <p class="lead content-block"><strong>JQuery</strong>  - is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</p>
+    <p class="learn-more-block"><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="content-title"><h3>CLIENTS</h3></div>
+        @if (Model.Clients != null && Model.Clients.Count > 0)
+        {
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">FIRST NAME</th>
+                        <th scope="col">LAST NAME</th>
+                        <th scope="col">BIRTHDAY</th>
+                        <th scope="col">CREATED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Clients.Count; i++)
+                    {
+                        <tr>
+                            <th scope="row">@(i + 1)</th>
+                            <td>@Model.Clients[i].FirstName</td>
+                            <td>@Model.Clients[i].LastName</td>
+                            <td>@Model.Clients[i].Birthday.ToLocalTime().ToString("dd.MM.yyyy")</td>
+                            <td>@Model.Clients[i].CreatedOn.ToLocalTime().ToString("HH:mm dd.MM.yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="content-block">There are no items in database.</p>
+        }
+    </div>
+    <div class="col-md-12">
+        <div class="content-title"><h3>TEACHERS</h3></div>
+        @if (Model.Teachers != null && Model.Teachers.Count > 0)
+        {
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">FIRST NAME</th>
+                        <th scope="col">LAST NAME</th>
+                        <th scope="col">BIRTHDAY</th>
+                        <th scope="col">HIRED</th>
+                        <th scope="col">CREATED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Teachers.Count; i++)
+                    {
+                        <tr>
+                            <th scope="row">@(i + 1)</th>
+                            <td>@Model.Teachers[i].FirstName</td>
+                            <td>@Model.Teachers[i].LastName</td>
+                            <td>@Model.Teachers[i].Birthday.ToLocalTime().ToString("dd.MM.yyyy")</td>
+                            <td>@Model.Teachers[i].Hired.ToLocalTime().ToString("dd.MM.yyyy")</td>
+                            <td>@Model.Teachers[i].CreatedOn.ToLocalTime().ToString("HH:mm dd.MM.yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="content-block">There are no items in database.</p>
+        }
+    </div>
+    <div class="col-md-12">
+        <div class="content-title"><h3>LESSONS</h3></div>
+        @if (Model.Lessons != null && Model.Lessons.Count > 0)
+        {
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">TITLE</th>
+                        <th scope="col">DESCRIPTION</th>
+                        <th scope="col">TYPE</th>
+                        <th scope="col">TEACHER</th>
+                        <th scope="col">CREATED</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (int i = 0; i < Model.Lessons.Count; i++)
+                    {
+                        <tr>
+                            <th scope="row">@(i + 1)</th>
+                            <td>@Model.Lessons[i].Title</td>
+                            <td>@Model.Lessons[i].Description</td>
+                            @if (Model.Lessons[i].Type == DK.Dal.Enums.LessonType.Practical)
+                            {
+                                <td>Practical</td>
+                            }
+                            else if (Model.Lessons[i].Type == DK.Dal.Enums.LessonType.Theoretical)
+                            {
+                                <td>Theoretical</td>
+                            }
+                            else
+                            {
+                                <td>Unknown</td>
+                            }
+                            <td>@Model.Lessons[i].Teacher.FirstName @Model.Lessons[i].Teacher.LastName</td>
+                            <td>@Model.Lessons[i].CreatedOn.ToLocalTime().ToString("HH:mm dd.MM.yyyy")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="content-block">There are no items in database.</p>
+        }
+    </div>
+</div>

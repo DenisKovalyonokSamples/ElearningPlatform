@@ -1,0 +1,10 @@
+D:\Dev\SourceControls\DEMO\Web\DK.WebDEMO\.vs\DK.WebDEMO\lut\0\b\DK.BusinessLogic\bin\Debug\DK.BusinessLogic.dll
+D:\Dev\SourceControls\DEMO\Web\DK.WebDEMO\.vs\DK.WebDEMO\lut\0\i\DK.BusinessLogic\Debug\DK.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Dev\SourceControls\DEMO\Web\DK.WebDEMO\.vs\DK.WebDEMO\lut\0\i\DK.BusinessLogic\Debug\DK.BusinessLogic.csproj.CopyComplete
+D:\Dev\SourceControls\DEMO\Web\DK.WebDEMO\.vs\DK.WebDEMO\lut\0\i\DK.BusinessLogic\Debug\DK.BusinessLogic.dll
+D:\Dev\SourceControls\DEMO\Web\DK.WebDEMO\.vs\DK.WebDEMO\lut\0\i\DK.BusinessLogic\Debug\DK.BusinessLogic.csprojAssemblyReference.cache
+D:\Dev\SourceControls\GitHub\web.api.elearning\.vs\DK.WebDEMO\lut\3528\b\DK.BusinessLogic\bin\Debug\DK.BusinessLogic.dll
+D:\Dev\SourceControls\GitHub\web.api.elearning\.vs\DK.WebDEMO\lut\3528\i\DK.BusinessLogic\Debug\DK.BusinessLogic.csprojAssemblyReference.cache
+D:\Dev\SourceControls\GitHub\web.api.elearning\.vs\DK.WebDEMO\lut\3528\i\DK.BusinessLogic\Debug\DK.BusinessLogic.csproj.CoreCompileInputs.cache
+D:\Dev\SourceControls\GitHub\web.api.elearning\.vs\DK.WebDEMO\lut\3528\i\DK.BusinessLogic\Debug\DK.BusinessLogic.csproj.CopyComplete
+D:\Dev\SourceControls\GitHub\web.api.elearning\.vs\DK.WebDEMO\lut\3528\i\DK.BusinessLogic\Debug\DK.BusinessLogic.dll
