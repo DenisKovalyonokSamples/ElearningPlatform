@@ -4,16 +4,22 @@ using DK.BusinessLogic.Managers;
 using DK.BusinessLogic.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
 
 namespace DK.Api.Controllers
 {
+    /// <summary>
+    /// API Controller for Teacher's data access
+    /// </summary>  
     public class TeacherController : ApiController
     {
+        // GET api/documentation
+        /// <summary>
+        /// Gets Teacher entity data by it's Id value
+        /// </summary>  
+        /// <param name="id">Teacher Id value</param>
+        /// <returns>The Teacher data model</returns>
         [HttpGet]
         [Route("get_teacher")]
         [ResponseType(typeof(TeacherModel))]
@@ -39,6 +45,11 @@ namespace DK.Api.Controllers
             }
         }
 
+        // GET api/documentation
+        /// <summary>
+        /// Gets all Teacher entities data
+        /// </summary>  
+        /// <returns>The Teacher data collection</returns>
         [HttpGet]
         [Route("get_teachers")]
         [ResponseType(typeof(List<TeacherModel>))]
@@ -64,6 +75,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // POST api/documentation
+        /// <summary>
+        /// Add new Teacher entity to database
+        /// </summary>  
+        /// <param name="model">Teacher data model</param>
+        /// <returns>Response model data</returns>
         [Route("add_teacher")]
         [HttpPost]
         [ResponseType(typeof(ResponseModel))]
@@ -94,6 +111,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // POST api/documentation
+        /// <summary>
+        /// Update existing Teacher entity with new data
+        /// </summary>  
+        /// <param name="model">Teacher data model</param>
+        /// <returns>Response model data</returns>
         [Route("update_teacher")]
         [HttpPost]
         [ResponseType(typeof(ResponseModel))]
@@ -124,6 +147,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // DELETE api/documentation
+        /// <summary>
+        /// Delete existing Teacher entity from database
+        /// </summary>  
+        /// <param name="id">Teacher Id value</param>
+        /// <returns>Response model data</returns>
         [Route("delete_teacher")]
         [HttpDelete]
         [ResponseType(typeof(ResponseModel))]

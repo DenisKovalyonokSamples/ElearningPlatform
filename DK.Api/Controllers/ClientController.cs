@@ -9,8 +9,17 @@ using DK.BusinessLogic.Enums;
 
 namespace DK.Api.Controllers
 {
+    /// <summary>
+    /// API Controller for Client's data access
+    /// </summary>  
     public class ClientController : ApiController
     {
+        // GET api/documentation
+        /// <summary>
+        /// Gets Client entity data by it's Id value
+        /// </summary>  
+        /// <param name="id">Client Id value</param>
+        /// <returns>The Client data model</returns>
         [HttpGet]
         [Route("get_client")]
         [ResponseType(typeof(ClientModel))]
@@ -36,6 +45,11 @@ namespace DK.Api.Controllers
             }
         }
 
+        // GET api/documentation
+        /// <summary>
+        /// Gets all Client entities data
+        /// </summary>  
+        /// <returns>The Client data collection</returns>
         [HttpGet]
         [Route("get_clients")]
         [ResponseType(typeof(List<ClientModel>))]
@@ -61,6 +75,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // POST api/documentation
+        /// <summary>
+        /// Add new Client entity to database
+        /// </summary>  
+        /// <param name="model">Client data model</param>
+        /// <returns>Response model data</returns>
         [Route("add_client")]
         [HttpPost]
         [ResponseType(typeof(ResponseModel))]
@@ -91,6 +111,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // POST api/documentation
+        /// <summary>
+        /// Update existing Client entity with new data
+        /// </summary>  
+        /// <param name="model">Client data model</param>
+        /// <returns>Response model data</returns>
         [Route("update_client")]
         [HttpPost]
         [ResponseType(typeof(ResponseModel))]
@@ -121,6 +147,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // DELETE api/documentation
+        /// <summary>
+        /// Delete existing Client entity from database
+        /// </summary>  
+        /// <param name="id">Client Id value</param>
+        /// <returns>Response model data</returns>
         [Route("delete_client")]
         [HttpDelete]
         [ResponseType(typeof(ResponseModel))]

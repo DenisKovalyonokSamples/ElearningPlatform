@@ -9,8 +9,17 @@ using System.Web.Http.Description;
 
 namespace DK.Api.Controllers
 {
+    /// <summary>
+    /// API Controller for Lesson's data access
+    /// </summary>  
     public class LessonController : ApiController
     {
+        // GET api/documentation
+        /// <summary>
+        /// Gets Lesson entity data by it's Id value
+        /// </summary>  
+        /// <param name="id">Lesson Id value</param>
+        /// <returns>The Lesson data model</returns>
         [HttpGet]
         [Route("get_lesson")]
         [ResponseType(typeof(LessonModel))]
@@ -36,6 +45,11 @@ namespace DK.Api.Controllers
             }
         }
 
+        // GET api/documentation
+        /// <summary>
+        /// Gets all Lesson entities data
+        /// </summary>  
+        /// <returns>The Lesson data collection</returns>
         [HttpGet]
         [Route("get_lessons")]
         [ResponseType(typeof(List<LessonModel>))]
@@ -61,6 +75,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // POST api/documentation
+        /// <summary>
+        /// Add new Lesson entity to database
+        /// </summary>  
+        /// <param name="model">Lesson data model</param>
+        /// <returns>Response model data</returns>
         [Route("add_lesson")]
         [HttpPost]
         [ResponseType(typeof(ResponseModel))]
@@ -91,6 +111,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // POST api/documentation
+        /// <summary>
+        /// Update existing Lesson entity with new data
+        /// </summary>  
+        /// <param name="model">Lesson data model</param>
+        /// <returns>Response model data</returns>
         [Route("update_lesson")]
         [HttpPost]
         [ResponseType(typeof(ResponseModel))]
@@ -121,6 +147,12 @@ namespace DK.Api.Controllers
             }
         }
 
+        // DELETE api/documentation
+        /// <summary>
+        /// Delete existing Lesson entity from database
+        /// </summary>  
+        /// <param name="id">Lesson Id value</param>
+        /// <returns>Response model data</returns>
         [Route("delete_lesson")]
         [HttpDelete]
         [ResponseType(typeof(ResponseModel))]

@@ -1,0 +1,8 @@
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\b\DK.Api\bin\ApplicationInsights.config
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\b\DK.Api\bin\hibernate.cfg.xml
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\b\DK.Api\bin\DK.Api.dll.config
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\b\DK.Api\bin\DK.Api.dll
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Api\Debug\DK.Api.csprojAssemblyReference.cache
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Api\Debug\DK.Api.csproj.CoreCompileInputs.cache
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Api\Debug\DK.Api.csproj.CopyComplete
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Api\Debug\DK.Api.dll

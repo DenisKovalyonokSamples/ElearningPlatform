@@ -22,6 +22,9 @@ namespace DK.Api.Services
             _repository = new CoreRepository<Client>(WebApiApplication.GetCurrentSession());
         }
 
+        /// <summary>
+        /// Gets an attribute dislay name on an enum field value
+        /// </summary>        
         public int Add(Client entity)
         {
             int result = 0;
@@ -48,7 +51,7 @@ namespace DK.Api.Services
 
             return result;
         }
-
+      
         public bool Update(Client entity)
         {
             bool result = true;

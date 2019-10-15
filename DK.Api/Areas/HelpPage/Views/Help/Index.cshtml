@@ -6,9 +6,7 @@
 @model Collection<ApiDescription>
 
 @{
-    ViewBag.Title = "ASP.NET Web API Help Page";
-
-    // Group APIs by controller
+    ViewBag.Title = "eLearning DEMO API Help Page";
     ILookup<HttpControllerDescriptor, ApiDescription> apiGroups = Model.ToLookup(api => api.ActionDescriptor.ControllerDescriptor);
 }
 

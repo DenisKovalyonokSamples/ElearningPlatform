@@ -1,10 +1,10 @@
 ﻿@model DK.Web.Models.DataViewModel
 @{
-    ViewBag.Title = "WEB eLearning";
+    ViewBag.Title = "WEB API eLearning";
 }
 
 <div class="jumbotron">
-    <h1>WEB SITE</h1>
+    <h1>eLearning API DEMO</h1>
     <div class="content-title"><h3>TECHNOLOGY STACK</h3></div>
     <p class="lead content-block"><strong>ASP.NET MVC</strong>  - is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
     <p class="lead content-block"><strong>JQuery</strong>  - is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</p>
@@ -24,6 +24,7 @@
                         <th scope="col">LAST NAME</th>
                         <th scope="col">BIRTHDAY</th>
                         <th scope="col">CREATED</th>
+                        <th scope="col">ACTIONS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -35,6 +36,10 @@
                             <td>@Model.Clients[i].LastName</td>
                             <td>@Model.Clients[i].Birthday.ToLocalTime().ToString("dd.MM.yyyy")</td>
                             <td>@Model.Clients[i].CreatedOn.ToLocalTime().ToString("HH:mm dd.MM.yyyy")</td>
+                            <td>
+                                <a href="#" class="btn btn-warning">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -44,6 +49,7 @@
         {
             <p class="content-block">There are no items in database.</p>
         }
+        <a href="#" class="btn btn-success btn-add">Create New Client</a>
     </div>
     <div class="col-md-12">
         <div class="content-title"><h3>TEACHERS</h3></div>
@@ -58,6 +64,7 @@
                         <th scope="col">BIRTHDAY</th>
                         <th scope="col">HIRED</th>
                         <th scope="col">CREATED</th>
+                        <th scope="col">ACTIONS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -70,6 +77,10 @@
                             <td>@Model.Teachers[i].Birthday.ToLocalTime().ToString("dd.MM.yyyy")</td>
                             <td>@Model.Teachers[i].Hired.ToLocalTime().ToString("dd.MM.yyyy")</td>
                             <td>@Model.Teachers[i].CreatedOn.ToLocalTime().ToString("HH:mm dd.MM.yyyy")</td>
+                            <td>
+                                <a href="#" class="btn btn-warning">Edit</a>
+                                <a href="#" class="btn btn-danger">Delete</a>
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -79,6 +90,7 @@
         {
             <p class="content-block">There are no items in database.</p>
         }
+        <a href="#" class="btn btn-success btn-add">Create New Teacher</a>
     </div>
     <div class="col-md-12">
         <div class="content-title"><h3>LESSONS</h3></div>
@@ -93,6 +105,7 @@
                         <th scope="col">TYPE</th>
                         <th scope="col">TEACHER</th>
                         <th scope="col">CREATED</th>
+                        <th scope="col">ACTIONS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -116,6 +129,9 @@
                             }
                             <td>@Model.Lessons[i].Teacher.FirstName @Model.Lessons[i].Teacher.LastName</td>
                             <td>@Model.Lessons[i].CreatedOn.ToLocalTime().ToString("HH:mm dd.MM.yyyy")</td>
+                            <td>
+                                <a href="#" class="btn btn-primary">View</a>
+                            </td>
                         </tr>
                     }
                 </tbody>
@@ -125,5 +141,7 @@
         {
             <p class="content-block">There are no items in database.</p>
         }
+        <a href="#" class="btn btn-success btn-add">Create New Lesson</a>
     </div>
+
 </div>

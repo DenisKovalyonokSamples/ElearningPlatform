@@ -1,0 +1,6 @@
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\b\DK.Dal\bin\Debug\DK.Dal.dll.config
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\b\DK.Dal\bin\Debug\DK.Dal.dll
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Dal\Debug\DK.Dal.csprojAssemblyReference.cache
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Dal\Debug\DK.Dal.csproj.CoreCompileInputs.cache
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Dal\Debug\DK.Dal.csproj.CopyComplete
+D:\Dev\SourceControls\GitHub\Mine\ElearningPlatform\.vs\DK.WebDEMO\lut\0\i\DK.Dal\Debug\DK.Dal.dll
